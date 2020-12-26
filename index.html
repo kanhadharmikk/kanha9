@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Profile Card Hover Animation | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Kanha Dharmik</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <a href="#">
+                <img src="kanha.jpg" alt="">
+            </a>
+            <div class="title">
+                Kanha Dharmik</div>
+            <div class="place">
+                Country, City</div>
+        </div>
+        <div class="content">
+            <p>
+                User Interface Designer and <br>front-end developer</p>
+            <div class="buttons">
+                <div class="btn">
+                    <button>Message</button>
+                </div>
+                <div class="btn">
+                    <button>Following</button>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100014860262881" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://www.instagram.com/kanhadharmik_/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+        </div>
+    </div>
+
+
+    <script>
+        const img = document.querySelector("img");
+        const icons = document.querySelector(".icons");
+        img.onclick = function() {
+            this.classList.toggle("active");
+            icons.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
